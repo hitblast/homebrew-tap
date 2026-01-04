@@ -14,7 +14,7 @@ cask 'alter' do
     odie 'Alter is only available for ARM-based Macs (Apple Silicon).'
   end
 
-  depends_on macos: '>= :sequoia'
+  depends_on macos: '>= :tahoe'
 
   postflight do
     system_command '/usr/bin/xattr', args: ['-d', 'com.apple.quarantine', "#{appdir}/Alter.app"]

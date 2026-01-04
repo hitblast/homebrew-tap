@@ -15,6 +15,6 @@ class Mcsrvstat < Formula
 
   def install
     system 'nimble', 'build', '-d:ssl', '-d:release', '--accept'
-    bin.install 'nimip'
+    bin.install 'mcsrvstat'
   end
 end

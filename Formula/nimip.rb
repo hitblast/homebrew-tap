@@ -5,7 +5,7 @@ class Nimip < Formula
   version '1.3'
   desc 'Asynchronously lookup IP addresses with this tiny, hybrid Nim application'
   homepage 'https://github.com/hitblast/nimip'
-  url "https://github.com/hitblast/nimip/archive/refs/tags/v#{version}.tar.gz"
+  url "https://github.com/hitblast/nimip/archive/refs/tags/#{version}.tar.gz"
   sha256 '293f4e4106d2407efb1ed764c6f337282d5911052e1db6db766114562d3ff5e0'
   license 'MIT'
 

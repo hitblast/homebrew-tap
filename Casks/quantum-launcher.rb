@@ -3,7 +3,7 @@
 # DEVELOPMENT FORK SCRIPT
 # DO NOT USE IN PRODUCTION
 
-cask 'quantumlauncher' do
+cask 'quantum-launcher' do
   version '0.5.0'
 
   name 'QuantumLauncher'

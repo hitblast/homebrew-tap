@@ -23,8 +23,9 @@ cask 'quantumlauncher' do
   end
 
   postflight do
-    system_command '/usr/bin/xattr', args: ['-rc', "#{appdir}/quantum-launcher.app"]
+    system_command '/usr/bin/xattr', args: ['-r', '-c', "#{appdir}/quantum-launcher.app"]
   end
 
   app 'quantum-launcher.app'
+
 end

@@ -17,9 +17,5 @@ cask "quantumlauncher" do
     sha256 "6a0e9fcaa5cd92080689a9c77d11475272ce2d6e78c0ddc0d8b3fc39a6dc8b9d"
   end
 
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-r", "-c", "#{appdir}/quantum-launcher.app"]
-  end
-
   app "quantum-launcher.app"
 end

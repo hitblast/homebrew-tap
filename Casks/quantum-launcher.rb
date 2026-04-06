@@ -19,6 +19,7 @@ cask "quantum-launcher" do
   depends_on macos: ">= :big_sur"
 
   app "quantum-launcher.app"
+
   caveats do
     signed "false"
   end

@@ -16,7 +16,7 @@ cask "quantumlauncher" do
   desc "Minimalistic Minecraft launcher"
   homepage "https://github.com/Mrmayman/quantumlauncher"
 
-  depends_on macos: ">= :catalina"
+  depends_on macos: ">= :big_sur"
 
   app "quantum-launcher.app"
 end

@@ -1,16 +1,11 @@
-# frozen_string_literal: true
+cask "quantumlauncher" do
+  version "0.5.1"
 
-# DEVELOPMENT FORK SCRIPT
-# DO NOT USE IN PRODUCTION
+  name "QuantumLauncher"
+  desc "Minimalistic Minecraft launcher"
+  homepage "https://github.com/Mrmayman/quantumlauncher"
 
-cask 'quantumlauncher' do
-  version '0.5.1'
-
-  name 'QuantumLauncher'
-  desc 'A minimalistic Minecraft launcher for Windows, macOS and Linux.'
-  homepage 'https://github.com/Mrmayman/quantumlauncher'
-
-  depends_on macos: '>= :catalina'
+  depends_on macos: ">= :catalina"
 
   on_arm do
     url "https://github.com/Mrmayman/quantumlauncher/releases/download/v#{version}/quantum_launcher_macos_aarch64.dmg"
@@ -23,9 +18,8 @@ cask 'quantumlauncher' do
   end
 
   postflight do
-    system_command '/usr/bin/xattr', args: ['-r', '-c', "#{appdir}/quantum-launcher.app"]
+    system_command "/usr/bin/xattr", args: ["-r", "-c", "#{appdir}/quantum-launcher.app"]
   end
 
-  app 'quantum-launcher.app'
-
+  app "quantum-launcher.app"
 end

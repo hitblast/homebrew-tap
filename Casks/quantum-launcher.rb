@@ -1,4 +1,4 @@
-cask "quantumlauncher" do
+cask "quantum-launcher" do
   version "0.5.1"
 
   on_arm do
@@ -19,4 +19,7 @@ cask "quantumlauncher" do
   depends_on macos: ">= :big_sur"
 
   app "quantum-launcher.app"
+  caveats do
+    signed "false"
+  end
 end

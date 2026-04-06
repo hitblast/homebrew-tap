@@ -1,5 +1,6 @@
 cask "quantum-launcher" do
   version "0.5.1"
+  sha256 :no_check
 
   on_arm do
     url "https://github.com/Mrmayman/quantumlauncher/releases/download/v#{version}/quantum_launcher_macos_aarch64.dmg"
@@ -9,9 +10,8 @@ cask "quantum-launcher" do
   end
 
   name "QuantumLauncher"
-  desc "A simple, powerful Minecraft launcher"
+  desc "Simple, powerful Minecraft launcher"
   homepage "https://github.com/Mrmayman/quantumlauncher"
-  sha256 :no_check
 
   depends_on macos: ">= :big_sur"
 

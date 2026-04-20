@@ -1,0 +1,18 @@
+name: Bump Formula
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  bump-formula:
+    name: Bump Homebrew Formulae/Casks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: LanikSJ/homebrew-bump-formula@80accbc6945f51f07d3389b259124e185ca01ecd # v1.0.2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tap: hitblast/homebrew-tap

@@ -1,5 +1,5 @@
 cask "preconnect" do
-  version "1.6.5+202605036"
+  version "1.6.5+202605037"
 
   on_arm do
     escaped_version = version.to_s.gsub("+", "%2B")

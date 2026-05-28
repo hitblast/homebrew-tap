@@ -1,10 +1,10 @@
 cask "preconnect" do
-  version "1.6.5+202605050"
+  version "1.6.5+202605051"
 
   on_arm do
     escaped_version = version.to_s.gsub("+", "%2B")
     url "https://github.com/sabbirba/preconnect/releases/download/v#{escaped_version}/PreConnect-macos-release-#{escaped_version}.dmg"
-    sha256 "62c12e83505cf940cd579a142bfceb2ae2d050ad95bdfac2b70157ba72cdf5eb"
+    sha256 "5848c283e565c26093135b3d4771ea76ae876c8949ade7975244a41df22563c2"
   end
 
   name "PreConnect"

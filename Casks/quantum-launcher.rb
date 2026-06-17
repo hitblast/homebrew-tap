@@ -14,7 +14,7 @@ cask "quantum-launcher" do
   desc "Simple, powerful Minecraft launcher"
   homepage "https://github.com/Mrmayman/quantumlauncher"
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   postflight do
     system_command "/usr/bin/xattr", args: ["-r", "-c", "#{appdir}/quantum-launcher.app"]

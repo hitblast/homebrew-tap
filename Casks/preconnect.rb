@@ -14,7 +14,7 @@ cask "preconnect" do
   depends_on macos: ">= :big_sur"
 
   postflight do
-    system_command "/usr/bin/xattr", args: ["-r", "-c", "#{appdir}/PreConnect.app"]
+    system_command "/usr/bin/xattr", args: ["-r", "-c", "#{appdir}/PreConnect.app"], must_succeed: false
   end
 
   app "PreConnect.app"

@@ -11,7 +11,7 @@ cask "preconnect" do
   desc "Fast, Calm Academic Companion App. An initiative run by BRAC University students."
   homepage "https://github.com/sabbirba/preconnect"
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   postflight do
     system_command "/usr/bin/xattr", args: ["-r", "-c", "#{appdir}/PreConnect.app"], must_succeed: false

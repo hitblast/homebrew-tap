@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # Calculate saved time on videos with multipliers.
-class Cornelli < Formula
+class Trimsec < Formula
   version '2.0.0'
   desc 'Calculate saved time on videos with multipliers.'
   homepage 'https://github.com/hitblast/trimsec'

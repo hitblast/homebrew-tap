@@ -2,13 +2,13 @@
 
 # Calculate saved time on videos with multipliers.
 class Trimsec < Formula
-  version '2.1.0'
+  version '2.1.1'
   desc 'Calculate saved time on videos with multipliers.'
   homepage 'https://github.com/hitblast/trimsec'
 
   if Hardware::CPU.arm?
     url "https://github.com/hitblast/trimsec/releases/download/v#{version}/trimsec-macos-latest.tar.gz"
-    sha256 'a72f9f7d53f9af96d8e632300573b66ac342a4cd38bffe92f701cb3da81f024e'
+    sha256 '8d6e528aef0aeecba1b8ed155244e5a6b3977aba29661f80635397919be8ebdb'
   else
     odie 'trimsec is only available for ARM versions of macOS (Apple Silicon).'
   end

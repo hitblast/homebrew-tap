@@ -13,7 +13,7 @@ cask "preconnect" do
 
   depends_on macos: :big_sur
 
-  pkg "PreConnect-macos-release-#{escaped_version}.pkg"
+  pkg "PreConnect-macos-release-#{version}.pkg"
 
   postflight do
     system_command "/usr/bin/xattr",

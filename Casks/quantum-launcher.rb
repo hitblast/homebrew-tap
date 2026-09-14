@@ -16,7 +16,7 @@ cask "quantum-launcher" do
 
   depends_on macos: :big_sur
 
-  postflight do
+  postflight_steps do
     system_command "/usr/bin/xattr", args: ["-r", "-c", "#{appdir}/quantum-launcher.app"], must_succeed: false
   end
 

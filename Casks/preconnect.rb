@@ -15,7 +15,7 @@ cask "preconnect" do
 
   pkg "PreConnect-macos-release-#{version}.pkg"
 
-  postflight do
+  postflight_steps do
     system_command "/usr/bin/xattr",
                    args: ["-r", "-c", "#{appdir}/PreConnect.app"],
                    must_succeed: false

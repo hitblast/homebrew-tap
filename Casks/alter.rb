@@ -16,9 +16,5 @@ cask 'alter' do
 
   depends_on macos: :sequoia
 
-  postflight_steps do
-    system_command '/usr/bin/xattr', args: ['-d', 'com.apple.quarantine', "#{appdir}/Alter.app"], must_succeed: false
-  end
-
   app 'Alter.app'
 end

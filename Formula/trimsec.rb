@@ -8,7 +8,7 @@ class Trimsec < Formula
 
   if Hardware::CPU.arm?
     url "https://github.com/hitblast/trimsec/releases/download/v#{version}/trimsec-macos-latest.tar.gz"
-    sha256 '2e659fd7811cf06d9303735875f0dd495527bcb9f64cea05322f47250da5adc2'
+    sha256 'dea27a7a127f59a94fb1755e52c070ba01e2ab0560bfd51998bcb6442a186470'
   else
     odie 'trimsec is only available for ARM versions of macOS (Apple Silicon).'
   end

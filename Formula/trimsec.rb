@@ -2,19 +2,19 @@
 
 # Calculate saved time on videos with multipliers.
 class Trimsec < Formula
-  version '4.5.5'
+  version '4.5.7'
   desc 'Plan your content intake.'
   homepage 'https://github.com/hitblast/trimsec'
 
   if Hardware::CPU.arm?
-    url "https://github.com/hitblast/trimsec/releases/download/v#{version}/trimsec-macos-latest.tar.gz"
-    sha256 'bfee41a9c7ade1d9e68e316afac8cc4bb6aa610a2d2d0dbbe9e8a353dfbeae95'
+    url "https://github.com/hitblast/trimsec/releases/download/v#{version}/trimsec-aarch64-apple-darwin-v#{version}.tar.gz"
+    sha256 '62719f9857b33ca88ef6e9b74ebb2e5cc7b3cf438bdcb9216b9dc17663ba7e91'
   else
-    odie 'trimsec is only available for ARM versions of macOS (Apple Silicon).'
+    url "https://github.com/hitblast/trimsec/releases/download/v#{version}/trimsec-x86_64-apple-darwin-v#{version}.tar.gz"
+    sha256 '4af2be0f847ae2693c7e2e14112b1f7559054471796c9970b51fa35bcde8828f'
   end
 
   license 'MIT'
-
   depends_on macos: :big_sur
 
   def install

@@ -15,7 +15,6 @@ class Trimsec < Formula
   end
 
   license 'MIT'
-  depends_on macos: :big_sur
 
   def install
     bin.install 'ts'

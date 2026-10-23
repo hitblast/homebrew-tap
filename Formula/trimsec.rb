@@ -8,10 +8,10 @@ class Trimsec < Formula
 
   if Hardware::CPU.arm?
     url "https://github.com/hitblast/trimsec/releases/download/v#{version}/trimsec-aarch64-apple-darwin-v#{version}.tar.gz"
-    sha256 '25ed817887bc6d3ab23eed53823bd08a379f6923aa66c93f181864465067faef'
+    sha256 '7d27eea7423278d42d1845ba91a7645606c5019a85f546d15c2d8c4836d42226'
   else
     url "https://github.com/hitblast/trimsec/releases/download/v#{version}/trimsec-x86_64-apple-darwin-v#{version}.tar.gz"
-    sha256 'a6c4e3146760b6c80ce0288e441e4392a4ddfafd5010039073669b5a5c6df26e'
+    sha256 '6e8eda755e1c50d2133324ca6a64837d9a3fbfb55e514ed30c353e3d8e21ac41'
   end
 
   license 'MIT'

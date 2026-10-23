@@ -2,7 +2,7 @@
 
 # Calculate saved time on videos with multipliers.
 class Trimsec < Formula
-  version '5.1.0'
+  version '5.1.1'
   desc 'Plan your content intake.'
   homepage 'https://github.com/hitblast/trimsec'
 

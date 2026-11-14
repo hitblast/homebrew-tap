@@ -6,7 +6,7 @@ class Cutler < Formula
   homepage 'https://github.com/hitblast/cutler'
 
   if Hardware::CPU.arm?
-    url "https://github.com/machlit/cutler/releases/download/v#{version}/cutler-aarch64-apple-darwin.tar.gz"
+    url "https://github.com/hitblast/cutler/releases/download/v#{version}/cutler-aarch64-apple-darwin.tar.gz"
     sha256 '2fd8c12f5bbca3e71086654470e4bc0f835dee862f7a31d40ad9b68fe4e97beb'
   else
     odie "cutler is only available for macOS ARM (Apple Silicon)."
